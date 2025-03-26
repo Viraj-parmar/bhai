@@ -1,0 +1,724 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#000000;
+    --white:#ffffff;
+    --coffee:#d0af98;
+    --robbo:'Roboto Slab';
+    --mon:'Montserrat';
+    --gutterwidth:12px;
+    --bg:#333333;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.col-1 {
+    width: 8.33%;
+    padding:0 var(--gutterwidth);
+}
+
+.col-2 {
+    width: 16.66%;
+    padding:0 var(--gutterwidth);
+}
+
+.col-3 {
+    width: 25%;
+    padding:0 var(--gutterwidth);
+}
+
+.col-4 {
+    width: 33.33%;
+    padding:0 var(--gutterwidth);
+}
+
+.col-5 {
+    width: 41.66%;
+    padding:0 var(--gutterwidth);
+}
+
+.col-6 {
+    width: 50%;
+    padding:0 var(--gutterwidth);
+}
+
+.col-7 {
+    width: 58.33%;
+    padding: 0 var(--gutterwidth);
+}
+
+.col-8 {
+    width: 66.66%;
+    padding: 0 var(--gutterwidth);
+}
+
+.col-9 {
+    width: 75%;
+    padding: 0 var(--gutterwidth);
+}
+
+.col-10 {
+    width: 83.33%;
+    padding: 0 var(--gutterwidth);
+}
+
+.col-11 {
+    width: 91.66%;
+    padding: 0 var(--gutterwidth);
+}
+
+.col-12 {
+    width: 100%;
+    padding: 0 var(--gutterwidth);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+.w-25{
+    width: 25%;
+}
+.w-50{
+    width: 50%;
+}
+.py100{
+    padding: 100px 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--mon);
+}
+
+/* HEADER */
+header{
+    justify-content: space-between; 
+    padding: 20px 10px;
+    position: absolute; 
+    z-index: 99;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+.header{
+    justify-content: space-between;
+}
+header img{
+    background-size: cover;
+}
+.menu ul li{
+   padding: 15px;
+   font-size: 15px;
+   font-family: var(--mon);
+   font-weight: 700 ;
+}
+.menu ul li a{
+    color: white;
+}
+.menu{
+    display: block;
+}
+.bar{
+    display: none;
+}
+.bar i{
+    color: var(--white);
+}
+
+/* main-banner start */
+.part h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin: 10px;
+}
+.part p{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--mon);
+}
+.part button{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 10px 0;
+    border: 2px solid var(--coffee);
+    background-color: transparent;
+    text-transform: capitalize;
+    color: var(--coffee);
+    font-weight: 500;
+}
+.main-banner{
+    background-image: url(../images/head-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: contain;
+}
+.banner{
+    position: relative;
+    height: 96vh;
+    background-image: url(../images/mask-pattern.png);
+    background-size: 1px;
+    background-repeat: repeat;
+    background-position: cover;
+    width: 100%;
+    background-color: rgba(17, 28, 80, 0.6);
+}
+.banner img{
+    width: 100%;   
+}
+.main-banner h1{
+    color: var(--white);
+}
+.main-banner p{
+    font-family: var(--mon);
+    color: var(--white);
+}
+.box{
+    color: var(--white);
+    padding-top: 50px;   
+    font-family: var(--robbo); 
+}   
+.box button{
+    border-radius: 15px;
+    padding: 10px 10px;
+    border: 2px solid brown;
+    font-size: 15px;
+     
+}
+.sidearrow{
+    width: 70px;
+    height: 78px;
+    background-image: url(../images/slider-navigation-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    position: absolute;
+    bottom: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    color: floralwhite;
+}
+.cut{
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+}
+
+/* about us start */
+
+.dsc h2{
+    color: var(--coffee);
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.dsc p{
+    color: #999999;
+    text-align: center;
+    font-family: var(--robbo);
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+.about .c-img{
+    position: relative;
+    padding: var(--gutterwidth);
+
+}
+.about .c-img img{
+    width: 100%;
+    display: block;
+}
+.loc{
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: var(--white);
+    padding: 15px;
+    color: var(--coffee);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 25px;
+}
+.c-dsc{
+    color: #faf8f7;
+    font-family: var(--robbo);
+    text-transform:capitalize;
+    font-size: 14px;
+    padding: 20px;
+    padding-top: 20px;
+    background: #faf8f7;
+}
+.c-dsc h2{
+    color: var(--coffee);
+    margin-bottom: 10px;
+    font-family: var(--mon);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.c-dsc p{
+    color: #666666;
+    font-family: var(--robbo);
+}
+.c-logo{
+    color: var(--coffee);
+    padding-left: 20px;
+    background: #faf8f7;
+    padding: 20px;
+}
+.c-logo span{
+    padding-left:5px;
+}
+
+
+/* leatest deals  */
+
+.latest-deals{
+    background-image: url(../images/dotted_worldmap.png);
+    padding: 70px 0 50px 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: var(--coffee);
+    color: var(--white);
+}
+.l-deals{
+    text-align: center;
+}
+.l-deals{
+    font-family: var(--mon);
+    text-transform: uppercase;
+}
+.l-deals h2{
+    color: var(--white);
+    font-family: var(--mon);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.9;
+}
+.l-deals p{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+mark{
+    background: none;
+    color: #624a37;
+    padding: 0.5em;
+}
+.i-class{
+    color: #624a37;  
+}
+.i-class li{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-size: small;
+    padding: 10px;
+    color: var(--white);
+    font-size: 15px;
+    margin: 0px;
+}
+.fa-plane{
+    transform: rotatez(-45deg);
+}
+.fa-2x{
+    color: #624a37;
+    padding: 8px;
+}
+
+/* popular tours */
+.p-tours .card{
+    margin-bottom: 12px;
+}
+.p-title{
+    font-size: 20px;
+    font-family: var(--mon);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: var(--coffee);
+}
+.p-img{
+    position: relative;
+    overflow: hidden;
+}
+.p-img img{
+    width: 100%;
+    display: block;
+    transition: all 0.2s linear;
+}
+.p-img:hover img{
+    transform: scale(1.5);
+}
+.p-icons{
+    position: absolute;
+    top: 15px;
+    right:0;
+    font-size: 10px;
+}
+.p-img:hover .p-icons{
+    display: none;
+}
+.p-icons ul{
+    font-size: 10px;
+    display: flex;
+}
+.p-icons li{
+    padding-right: 10px;
+    color: white;
+}
+.price{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--white);
+    font-size: 20px;
+}
+.p-dsc{
+    color: #ffffff;
+    background: #333333;
+    padding: 15px;
+    transition: all 0.2s linear;
+}
+.p-dsc h4{
+    color: var(--coffee);
+    padding: 10px 0;
+    font-size: 18px;
+}
+.p-dsc p{
+    font-family: var(--mon);
+    font-size: 14px;
+    font-weight: 300;
+}
+.p-dsc:hover{
+    background-color: var(--coffee);
+}
+.p-dsc:hover h4{
+    color: #333333;
+}   
+/* story section */
+
+.travel{
+    
+    padding-top: 50px;
+    background-color: #111c50;
+    background-image: url(../images/dotted_worldmap_dark.png);
+}
+.hexagon{
+    mask-image: url(../images/hexagon-mask.png);
+    mask-repeat: no-repeat;
+    mask-size: 150px;
+}
+.hexagon img{
+    width: 175px;
+    padding-bottom: 30px;
+}
+.t-dsc{
+    padding-bottom: 30px ;
+}
+.t-dsc p{
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--white);
+    font-family: var(--robbo);
+    line-height: 1.2;
+}
+.t-dsc h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--robbo);
+    color: var(--coffee);
+    color: #ab886c;
+}
+
+
+/* best section */
+
+.b-title h2{
+    font-size: 30px;
+    font-weight: 625;
+    letter-spacing: -1px;
+    color: #ab886c;
+    font-family: var(--mon);
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.b-title p{
+    color: #999999;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.b-button{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+.b-button ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    list-style: none;
+    margin: 0; 
+}
+
+.b-button li {
+    color: #ab886c;
+    border: 2px solid #ab886c;
+    padding: 10px;
+    margin: 5px; 
+    border-radius: 5px;
+    transition:all 0.1s linear;
+}
+
+.b-button span {
+    text-transform: uppercase;
+    color: #ab886c;
+    padding: 5px;
+    font-weight: 700;
+    font-family: var(--mon);
+}
+
+.b-button li:hover {
+    background-color: var(--coffee);
+    color: white;
+}
+
+.b-button li:hover span {
+    color: white;
+}
+.b-content{
+    width: 100%;
+    overflow: hidden;
+    height: 277px;
+    margin-bottom: 20px;
+}
+.b-img img{
+    width: 100%;
+    display: block;
+    transition: all 0.3s linear;
+} 
+.b-img{
+    transition: all 0.3s linear;
+}
+.b-dsc{
+    color: white;
+    width: 100%;
+    background-color: #333333;
+    padding: 20px;
+    transition: all 0.3s linear;
+}
+.b-dsc h4{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--mon)
+}
+.b-content:hover .b-dsc{
+    transform: translateY(-77px);
+}
+.b-content:hover .b-img{
+    transform: translateY(-77px);
+}
+/* didn't understand */
+/* top destination start */
+.top{
+    background-image: url(../images/dotted_worldmap.png);
+    background-color: #ab886c;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.top-dsc{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.top-dsc h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 0.1;
+    padding-bottom: 10px;
+}
+.top-dsc p{
+    font-size: 16px;
+    font-family: var(--mon);
+    margin-bottom: 40px;
+}
+.t-c-card{
+    position: relative;
+}
+.t-c-card img{
+    width: 100%;
+}
+.t-c-dsc{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    z-index: 99;
+}
+.t-c-temp{
+    position: absolute;
+    bottom: 60px;
+    left: 130px;
+    font-size: 30px;
+    color: white;   
+}
+.t-c-temp p{
+    padding-left: 10px;
+}
+.t-c-temp .fafa{
+    font-size: 50px;
+}
+
+/* map-section */
+
+.map{
+    position: relative;
+}
+.map-icon img{
+    bottom: -40px;
+    left: 50%;
+    width: 80px;
+    position: absolute;
+}
+
+/* contact us */
+
+.c-us-dsc{
+    color: var(--coffee);
+    text-align: center;
+}
+.c-us-dsc h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.c-us-dsc p{
+    font-size: 16px;
+    font-family: var(--mon);
+    padding-bottom: 30px;
+}
+.c-us-form {
+    text-align: center;
+}
+
+.form-g {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-f {
+    padding: 5px 20px;
+    color: var(--coffee);
+    border: 2px solid var(--coffee);
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.message {
+    width: 75%;
+    height: 90px;
+    text-align: start;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid var(--coffee);
+    border-radius: 5px;
+}
+
+.btm {
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--coffee);
+    display: inline-block;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--coffee);
+    display: block;
+}
+
+
+/* footer section */
+
+.footer{
+    height: 10vh;
+    background-color: #ab886c;
+    justify-content: space-evenly;
+}
+.fot-dsc{
+    margin-right: 600px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--mon);
+}
+.fot-logo{
+    justify-content: space-evenly;
+}
+.fot-logo ul{
+    padding-top: 20px;
+    color: #fff;
+}
+.fot-logo li{
+    font-size: 20px;
+    padding: 5px;
+    color: #fff;
+}
+.fot-logo .fa-brands{
+    color: #fff;
+}
